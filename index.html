@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>De Top2000 ALLER TIJDEN (vanaf '99)</h1>
+    <p>Druk op de knop hieronder om een gemiddelde van de Top2000 vanaf 1999 tot het huidige jaar te genereren.</p>
+    <p>Dit is eerlijker, want zo komt een nummer waar jaarlijks op gestemd wordt hoger dan een nummer dat het afgelopen jaar aan populariteit heeft gewonnen. </p>
+    
+    <a href="#" class="startButton">GENEREER LIJST</a>
+
+    <section class='list-container'>     
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Artiest</th>
+                  <th>Lied</th>
+                  <th>Positie</th>                   
+                </tr>
+              </thead>
+            </table>
+          </div> 
+          <div class="tbl-content">
+          </div>   
+    </section>
+
+    <h3>Regels</h3>
+    <ul>
+        <li>Er wordt een lijst gemaakt van het gemiddelde van elke notering. Voor elk jaar zonder notering wordt gerekend met plek 2001.</li>
+        <li>Hoe recenter de notering, hoe zwaarder deze meetelt. Een notering uit 1999 telt 1x mee, 2000 telt 1.01x mee, 2001 voor 1.02 etc.</li>
+        <li>Door de manier waarop de Wikipedia table geparsed wordt, kan het voorkomen dat er ipv. een artiest de naam van een nummer staat, dit is een bug...</li>
+    </ul>
+    
+    
+</body>
+</html>
